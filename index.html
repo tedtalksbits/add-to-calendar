@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://tedtalksbits.github.io/styles/styles.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Add To Calendar</title>
+    </head>
+    <body class="p-lg">
+        <h1>Add an Event</h1>
+        <form class="form p-md rounded-md">
+            <div class="form-control mb-md">
+                <label class="mb-sm" for="event-name">Event Name</label>
+                <input type="text" name="event-name" id="event-name" />
+            </div>
+            <div class="form-control mb-md">
+                <div class="flex gap-lg">
+                    <div class="flex-v w-full">
+                        <label class="mb-sm" for="event-date1">From</label>
+                        <input type="datetime-local" name="event-date1" id="event-date1" />
+                    </div>
+                    <div class="border-left"></div>
+                    <div class="flex-v w-full">
+                        <label class="mb-sm" for="event-date2">To</label>
+                        <input type="datetime-local" name="event-date2" id="event-date2" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-control mb-md">
+                <label class="mb-sm" for="event-location">Event Location</label>
+                <input type="text" name="event-location" id="event-location" />
+            </div>
+            <details>
+                <summary class="mb-sm">Description</summary>
+                <div class="form-control mb-md">
+                    <label class="mb-sm" for="event-description">Event Description</label>
+                    <textarea name="event-description" id="event-description" rows="5" cols="33"></textarea>
+                </div>
+            </details>
+
+            <button type="submit" value="submit" id="submit">Add To Calendar</button>
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
